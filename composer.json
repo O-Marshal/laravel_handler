@@ -1,0 +1,29 @@
+{
+    "name": "ckryo/laravel_handler",
+    "description": "laravel 错误处理及错误码管理",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "error", "handler"],
+    "support": {
+        "issues": "https://github.com/ckryo/laravel_handler/issues",
+        "source": "https://github.com/ckryo/laravel_handler"
+    },
+    "authors": [
+        {
+            "name": "ckryo",
+            "email": "ckryo@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/http": ">=5.1",
+        "illuminate/support": ">=5.1",
+        "illuminate/contracts": ">=5.1",
+        "Illuminate/database": ">=5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ckryo\\Laravel\\Handler\\": "src"
+        }
+    }
+}
