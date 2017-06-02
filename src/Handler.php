@@ -2,8 +2,8 @@
 
 namespace Ckryo\Laravel\Handler\Exceptions;
 
-use Ckryo\Laravel\Http\Contracts\ExceptionFactory;
-use Ckryo\Laravel\Http\ErrorCodeException;
+use Ckryo\Laravel\Handler\Contracts\ExceptionFactory;
+use Ckryo\Laravel\Handler\ErrorCodeException;
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;
@@ -22,7 +22,7 @@ class Handler extends ExceptionHandler
         \Illuminate\Database\Eloquent\ModelNotFoundException::class,
         \Illuminate\Session\TokenMismatchException::class,
         \Illuminate\Validation\ValidationException::class,
-        \Ckryo\Laravel\Http\ErrorCodeException::class
+        \Ckryo\Laravel\Handler\ErrorCodeException::class
     ];
 
     /**
